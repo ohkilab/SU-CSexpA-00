@@ -29,7 +29,7 @@ body{
 	<body>
 <h1>Flickrに最近アップロードされた500枚</h1>
 <?php
-$Flickr_apikey = "600dfca58e06413caa4125ce28da02b7";
+$Flickr_apikey = "XXXXXXXXXXX";
 $Flickr_getRecent = "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=".$Flickr_apikey."&extras=url_s&per_page=500&format=php_serial";
 $result = unserialize(file_get_contents($Flickr_getRecent));
 $colors = array(
